@@ -1,5 +1,6 @@
 # Python-codes
 1. extract_n_multiplex.py - to extract regions of sequences which can be amplified using specified primers and make multiple copies in multi-fasta file (multiplex) with random numbers for "n" times.
+Dependency - fuzznuc (emboss-toolkit)
 Usage: python3.6 extract_n_multiplex.py [options]
 Options:
   -h, --help         show this help message and exit
