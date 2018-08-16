@@ -5,7 +5,7 @@ from optparse import OptionParser
 #inputFile,outputFile = "",""
 parser = OptionParser()
 parser.add_option("-i","--input",dest="inputFile",help="input fasta/multi-fasta file (protein/nucleotide).")
-parser.add_option("-o","--output",dest="outputFile",help="output file name.")
+parser.add_option("-o","--output",dest="outputFile",help="output file name (tab-separated).")
 (options,args) = parser.parse_args()
 
 inputFile = options.inputFile
