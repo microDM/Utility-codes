@@ -1,7 +1,7 @@
 # Python-codes
 1. extract_n_multiplex.py - to extract regions of sequences which can be amplified using specified primers and make multiple copies in multi-fasta file (multiplex) with random numbers for "n" times.
 
-  Dependency - fuzznuc (emboss-toolkit)
+  Dependencies - fuzznuc (emboss-toolkit)
 
   Usage: python3.6 extract_n_multiplex.py [options]
 
@@ -18,4 +18,17 @@
                      
     -d SEQDATA         multifasta sequence file from which regions will be
                        extracted
-                     
+  
+  2. seq_stat.py - extract count of each letters(nucleotide/amino acids) and seuence length in each sequence in fasta file.
+  
+   Dependencies - BioPython
+    
+   Usage: python3.6 seq_stat.py -i input.fasta -o output.txt
+   
+   Options:
+   
+    -h, --help            show this help message and exit.
+    
+    -i INPUTFILE, --input=INPUTFILE	input fasta/multi-fasta file (protein/nucleotide).
+    
+    -o OUTPUTFILE, --output=OUTPUTFILE	output file name.
