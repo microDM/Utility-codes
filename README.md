@@ -31,4 +31,4 @@
     
     -i INPUTFILE, --input=INPUTFILE	input fasta/multi-fasta file (protein/nucleotide).
     
-    -o OUTPUTFILE, --output=OUTPUTFILE	output file name.
+    -o OUTPUTFILE, --output=OUTPUTFILE	output file name(tab-separated).
