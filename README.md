@@ -32,3 +32,6 @@
     -i INPUTFILE, --input=INPUTFILE	input fasta/multi-fasta file (protein/nucleotide).
     
     -o OUTPUTFILE, --output=OUTPUTFILE	output file name(tab-separated).
+   3. csv2LibSVM.R - convert .csv to .libsvm format
+    Usage: csv2LibSVM.R inputFileName positiveClassName outFileName
+    
