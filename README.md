@@ -35,4 +35,7 @@
   3. csv2LibSVM.R - convert .csv to .libsvm format
    
    Usage: csv2LibSVM.R inputFileName positiveClassName outFileName
+  4. contigPlot.py - For plotting density plots of contig lengths. (Usually used for WGS genomes/ draft genomes / MAGs)
+   
+   Usage: python contigPlot.py fastaDir (directory of genomes) 
     
