@@ -3,7 +3,7 @@
 
   Dependencies - fuzznuc (emboss-toolkit)
 
-  Usage: python3.6 extract_n_multiplex.py [options]
+    Usage: python3.6 extract_n_multiplex.py [options]
 
     Options:
 
@@ -23,7 +23,7 @@
   
    Dependencies - BioPython (In case you don't have BioPython, use https://github.com/drdee255/Perl-Bioinformatics/blob/master/seq_stat.pl)
     
-   Usage: python3.6 seq_stat.py -i input.fasta -o output.txt
+    Usage: python3.6 seq_stat.py -i input.fasta -o output.txt
    
    Options:
    
@@ -34,9 +34,9 @@
     -o OUTPUTFILE, --output=OUTPUTFILE	output file name(tab-separated).
   3. csv2LibSVM.R - convert .csv to .libsvm format
    
-   Usage: csv2LibSVM.R inputFileName positiveClassName outFileName
+    Usage: csv2LibSVM.R inputFileName positiveClassName outFileName
  
   4. contigPlot.py - For plotting density plots of contig lengths. (Usually used for WGS genomes/ draft genomes / MAGs)
    
-   Usage: python contigPlot.py fastaDir (directory of genomes) 
+    Usage: python contigPlot.py fastaDir (directory of genomes) 
     
