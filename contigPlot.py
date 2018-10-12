@@ -25,4 +25,4 @@ ax = sns.distplot(csv[0], hist = False, kde = True,kde_kws = {'linewidth': 3})
 ax.set(xlabel='contig lengths (Kb)')
 plt.subplots_adjust(left=0.2)
 plt.savefig("contigLength_DensityPlot",dpi=600)
-os.remove("contigLenght.txt")
+
