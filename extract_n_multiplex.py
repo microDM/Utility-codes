@@ -21,6 +21,7 @@ import os
 import re
 import random
 from random import shuffle
+from Bio import SeqIO
 
 #definitions
 def qw(s):
@@ -107,18 +108,14 @@ else:
 #extract seq and write in file
 fout = open("variable_regions.fasta","a") 
 fout2 = open("failed.fasta","a")
-fseq = open(seqdata,"r")
-fiter = iter(fseq)
 noOfSeqWritten = 0
-for line in fiter:
+for record in SeqIO.parse(seqdata,"fasta"):
     ftmp = open("tmp.fasta","w")
-    ftmp.write(line)
-    matchObj = re.match("^>(.*)",line)
-    if(matchObj):
-        header = matchObj.group(1)
-        seq = next(fiter)
-    ftmp.write(seq)
+    seq = str(record.seq)
+    id = str(record.id) + " " + str(record.description)
+    ftmp.write(">" + id + "\n" + seq)
     ftmp.close()
+    header = id
     start,end = getpos(forward_primer,reverse_primer)
     if start > 0 and end > 0:
         vregion = extract_subseq(seq,start,end)
@@ -129,7 +126,6 @@ for line in fiter:
         fout2.write(">"+header)
         fout2.write(seq)    
 fout.close()
-fseq.close()
 os.remove("tmp.fasta")
 print("No. of seq written",noOfSeqWritten)
 
@@ -151,6 +147,7 @@ for i in range(int(niter)):
     for line in fiter:
         header = line
         seq = next(fiter)
+        print(intlist)
         copyNumber = intlist[index]
         fstat.write(header.strip()+"\t")
         fstat.write(str(copyNumber)+"\n")
