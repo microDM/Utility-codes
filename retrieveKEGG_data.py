@@ -1,3 +1,9 @@
+#Author:
+# Dattatray Mongad
+# National Centre for Cell Science
+#Pune, Maharashtra, India.
+#Date: 14 July 2019
+
 import requests
 import sys
 import re
