@@ -147,7 +147,7 @@ for i in range(int(niter)):
     for line in fiter:
         header = line
         seq = next(fiter)
-        print(intlist)
+        #print(intlist)
         copyNumber = intlist[index]
         fstat.write(header.strip()+"\t")
         fstat.write(str(copyNumber)+"\n")
