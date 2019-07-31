@@ -117,6 +117,8 @@ for record in SeqIO.parse(seqdata,"fasta"):
     ftmp.close()
     header = id
     start,end = getpos(forward_primer,reverse_primer)
+    if(start>end):
+        start,end = end,start
     if start > 0 and end > 0:
         vregion = extract_subseq(seq,start,end)
         seq = ">"+header+"\n"+vregion+"\n"
