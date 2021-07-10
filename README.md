@@ -39,4 +39,8 @@
   4. contigPlot.py - For plotting density plots of contig lengths. (Usually used for WGS genomes/ draft genomes / MAGs)
    
     Usage: python contigPlot.py fastaDir (directory of genomes) 
+  
+  5. fastp-stats.py - To make the summary of filtering process after running fastp on multiple FASTQ files
+  
+    Usage: python fastp-stats.py
     
